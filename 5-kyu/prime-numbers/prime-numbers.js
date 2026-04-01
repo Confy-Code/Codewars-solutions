@@ -20,3 +20,11 @@ function isPrime(number) {
 function getPrimes(start, finish) {
   start_point = Math.min(start, finish);
   finish_point = Math.max(start, finish);
+  
+  let arr = [];
+  for(let num = start_point; num <= finish_point; num++){
+    arr.push(num)
+  }
+  
+  return arr.filter(isPrime)
+}
